@@ -4,6 +4,6 @@ def prime?(num)
   if num < 0 || num == 0 || num == 1
     return false
   else
-    num % 2 != 0 || num % 3 != 0
+    num % (2...num) != 0 
   end
 end
