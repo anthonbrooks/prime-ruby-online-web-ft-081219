@@ -6,5 +6,6 @@ def prime?(num)
   else 
     (2...num).to_a.all? do |factor|
       num % factor != 0 
+    end
   end
 end
